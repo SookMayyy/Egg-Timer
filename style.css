@@ -1,0 +1,292 @@
+/* colors */
+
+:root {
+    --orange: #f07e5f;
+    --white: #FFFFFF;
+    --brown: #67452d;
+    --lightorange: #f19561;
+    --borderyellow: #f9bd00;
+    --yellowmid: #ffdeb9;
+    --backgroundyellow: #ffea79;
+}
+
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* text style */
+h1 {
+    color: var(--Brown, #67452D);
+    text-align: center;
+
+    /* h1 */
+    font-family: "Pixelify Sans";
+    font-size: 2.18281rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.62619rem; /* 120.313% */
+}
+
+/* Body Styling */
+body {
+    font-family: "Pixelify Sans";
+    background-image: url("image/cloud_background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-container {
+    background-color: var(--backgroundyellow);
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+h2, code {
+    color: var(--orange);
+    text-align: center;
+    font-family: "Pixelify Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 5px;
+}
+
+code {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* Shrink & Close Icons */
+.shrink-close-icons img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: -15px;
+    margin-top: 8px;
+}
+
+/* Start Button */
+#start-btn {
+    display: flex;
+    width: 7.2765rem;    
+    padding: 0.31569rem 2.56213rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+
+    font-size: 18px;
+    font-family: "Pixelify Sans";
+    color: var(--orange);
+    border: 2.729px solid var(--lightorange);
+    border-radius:8px;
+    background-color: var(--yellowmid);
+    /* Smooth transition for transform */
+    transition: transform 0.3s ease-out;
+}
+
+/* Button hover effect */
+#start-btn:hover {
+    background-color: var(--backgroundyellow);
+    transform: scale(1.1); /* Scale the button by 1.2 times */
+}
+
+#back-to-start {
+    display: flex;
+    width: 7.2765rem;
+    padding: 0.31569rem 2.56213rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.26313rem;
+    border: 2.733px solid #F19561;
+    background: #FFDEB9;
+
+    text-align: center;
+    font-family: "Pixelify Sans";
+    font-size: 1.26288rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #F07E5F;
+    /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
+}
+
+#back-to-start:hover {
+    background-color: var(--backgroundyellow);
+    transform: scale(1.05); /* Scale the element by 1.1 times */
+}
+
+/* Icons */
+.shrink-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
+
+.close-icon {
+    width: 28px; 
+    height: 28px;
+    object-fit: cover;
+}
+
+.shrink-icon:hover, .close-icon:hover {
+    transform: scale(1.05);
+}
+
+/* start page */
+.start-container {
+    display: flex;
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    text-align: center;
+    flex-grow: 1;            /* Take up remaining space if needed */
+    gap: 1rem;
+    max-width: 230px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* menu page */
+.menu-container {
+    display: flex;
+    width: 17.633rem;
+    padding: 0.68213rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.40925rem;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 1.5rem 1.63713rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center; /* Align text and image vertically */
+    flex-direction: column;
+    gap: 0.40925rem;
+}
+
+.egg-menu-image {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 0px; /* Space between image and text */
+    padding: 0px;
+    object-fit: fill;
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+    cursor: pointer;
+}
+
+/* Menu image upon hover */
+.egg-menu-image:hover {
+    transform: scale(1.10); /* Scale the image by 1.1 times when hovered */
+}
+
+.egg-menu-text {
+    font-size: 16px;
+    color: var(--brown);
+    margin: 0px; /* Space between image and text */
+    padding: 0px;
+}
+
+/* Timerpage */
+.timer-container {
+    display: flex;
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    text-align: center;
+    position: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+#timer-display {
+    font-family: "Pixelify", monospace;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--brown);
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Finished Page */
+.finished-container {
+    display: flex;
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    text-align: center;
+    position: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.finished-container p {
+    font-family: "Pixelify Sans";
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--brown);
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#back-start {
+    display: flex;
+    width: 10.2765rem;
+    padding: 0.31569rem 2.56213rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.26313rem;
+    border: 2.733px solid #F19561;
+    background: #FFDEB9;
+
+    text-align: center;
+    font-family: "Pixelify Sans";
+    font-size: 1.26288rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #F07E5F;
+    /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
+}
+
+#back-start:hover {
+    background-color: var(--backgroundyellow);
+    transform: scale(1.05); /* Scale the element by 1.1 times */
+}

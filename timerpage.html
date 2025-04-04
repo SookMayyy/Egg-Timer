@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+    <title>Egg Timer- Timer Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="timer-container">
+        <h1>Your egg ready in..</h1>
+        <img src="image/waiting.gif" loop="infinite">
+        <div id="timer-display">00:00</div>
+        <button id="back-to-start">Back</button>
+    </main>
+
+    <audio id="alarm-sound" src="sounds/alarm.mp3" preload="auto"></audio>
+    <audio id="bg-music" src="sounds/bg-music.mp3" loop></audio>
+
+    <script src="javascript/timerpage.js"></script>
+</body>
+</html>

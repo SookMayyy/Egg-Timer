@@ -1,0 +1,47 @@
+<!--
+Terminal:
+node -v
+npm -v
+
+npm init -y
+npm install electron --save-dev
+
+*check package.json (add a start script)
+
+npm start
+-->
+
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+        <title>Egg Timer - start page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Header Section -->
+        <header>
+            <div class = "header-container">
+                <h2>Egg Timer <code>&#60;3</code></h2>
+                <div class = "shrink-close-icons">
+                    <img src = "../BUILDING APP/image/shrink.png" alt="Shrink icon" class="shrink-icon">
+                    <img src = "../BUILDING APP/image/close.png" alt="Close icon" class="close-icon">
+                </div> 
+            </div>
+        </header>
+
+        <!-- Main Section -->
+         <main>
+            <div class="start-container">
+                <h1>Let's time your egg!</h1>
+                <button id="start-btn">Start</button>
+            </div>
+         </main>
+        
+         <script src="javascript/startpage.js"></script>
+
+    </body>
+</html>
