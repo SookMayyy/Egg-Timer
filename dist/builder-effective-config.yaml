@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.yourcompany.eggtimer
+productName: Egg Timer
+copyright: © 2024
+files:
+  - filter:
+      - '**/*'
+win:
+  target: nsis
+mac:
+  target: dmg
+linux:
+  target: AppImage
+electronVersion: 35.1.4
