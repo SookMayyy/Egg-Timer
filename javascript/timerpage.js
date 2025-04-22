@@ -39,7 +39,7 @@ document.getElementById("back-to-start").addEventListener("click", () => {
     clickSound.play().catch(err => console.error("Click sound failed:", err));
 
     setTimeout (() => {
-        window.location.href = "startpage.html";
+        window.location.href = "index.html";
     }, 300);
 });
 
