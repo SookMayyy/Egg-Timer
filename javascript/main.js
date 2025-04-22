@@ -9,6 +9,7 @@ const createWindow = () => {
         height: 600,
         frame: false, // Remove default title bar
         resizable: false,
+        icon: path.join(__dirname, 'image/gudetama.ico'), // set your icon here
         webPreferences: {
             //preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
