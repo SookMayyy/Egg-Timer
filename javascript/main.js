@@ -17,7 +17,7 @@ const createWindow = () => {
         }
     });
 
-    mainWindow.loadFile('startpage.html');
+    mainWindow.loadFile('index.html');
 };
 
 // Handle minimize event
